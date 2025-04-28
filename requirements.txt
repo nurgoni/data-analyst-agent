@@ -1,0 +1,12 @@
+pandas
+streamlit
+langchain-core
+scikit-learn
+plotly
+langchain
+langgraph==0.2.61
+langchain-openai
+langchain-experimental
+python-dotenv
+
+jupyter
