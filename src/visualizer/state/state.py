@@ -1,12 +1,11 @@
 import operator
-from dataclasses import dataclass
 from typing import Sequence, TypedDict, Annotated, List
+from dataclasses import dataclass
 
 from langchain_core.messages import BaseMessage
 
-
 @dataclass
-class InputData:
+class InputData(BaseMessage):
     variable_name: str
     data_path: str
     data_description: str
