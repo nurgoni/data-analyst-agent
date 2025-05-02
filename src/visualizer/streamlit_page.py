@@ -7,7 +7,7 @@ import streamlit as st
 
 from langchain_core.messages import HumanMessage, AIMessage
 
-from visualizer.agents import PythonChatbot
+from visualizer.agents import AgentDA
 from visualizer.state import InputData
 
 
@@ -132,7 +132,7 @@ with tab2:
 
     if 'selected_files' in st.session_state and st.session_state['selected_files']:
         if 'visualisation_chatbot' not in st.session_state:
-            st.session_state.visualisation_chatbot = PythonChatbot()
+            st.session_state.visualisation_chatbot = AgentDA()
         chat_container = st.container(height=500)
         with chat_container:
             # Display chat history with associated images
